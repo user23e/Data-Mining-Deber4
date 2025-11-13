@@ -173,6 +173,16 @@ Comparación completa entre implementaciones propias y sklearn en validación y 
 - Usar pgAdmin en `http://localhost:8080` para explorar las tablas visualmente creadas en RAW y ANALYTICS.
 - Se dispone de un archivo PDF que contiene capturas de pantalla como evidencia del proceso, recopiladas durante el desarrollo del proyecto.
 
+## Checklist de Aceptación
+
+- [x] **RAW** en Postgres: `raw.yellow_taxi_trip`, `raw.green_taxi_trip`, `raw.taxi_zone_lookup` (2015–2025).
+- [x] **OBT** `analytics.obt_trips` creada por **obt-builder** (comando reproducible, logs).
+- [x] **ML**: 4 modelos **from-scratch** + 4 **sklearn** (mismo preprocesamiento y split).
+- [x] **Comparativa**: tabla RMSE/MAE/R² (validación y test) + tiempos.
+- [x] **Diagnóstico**: residuales y errores por buckets.
+- [x] **README**: comandos de ingesta, **creación OBT** (comando que yo ejecutaré), ejecución notebook, variables `.env`.
+- [x] Seeds fijas; resultados reproducibles.
+
 ## Autor
 
 - Anahí Andrade (00323313)
